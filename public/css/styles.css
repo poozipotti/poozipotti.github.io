@@ -5707,6 +5707,7 @@ body {
 .georgeImg {
   width: 50%;
   margin-left: 25%;
+  margin-bottom: 20px;
   border-style: solid;
   border-radius: 50%; }
 
@@ -5731,3 +5732,7 @@ button {
 button:hover {
   color: #e9e2c9;
   background-color: #8f5453; }
+
+footer {
+  margin-top: 20px;
+  font-size: .7rem; }

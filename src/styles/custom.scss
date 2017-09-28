@@ -29,6 +29,7 @@ body{
 .georgeImg{
    width:50%;
    margin-left:25%;
+   margin-bottom: 20px;
    border-style: solid;
    border-radius:50%;
 }
@@ -55,4 +56,8 @@ button{
 button:hover{
    color:$lightShade; 
    background-color:$mainBrand;
+}
+footer{
+    margin-top: 20px;
+    font-size: .7rem;
 }

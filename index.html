@@ -16,31 +16,32 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarLinks">
-               <ul class="navbar-nav mr-auto">
-                   <li class="nav-item active"><a class="nav-link" href="#">About</a></li>
-                   <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                   <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
-               </ul>
+                <div class="container-fluid text-center">
+                   <ul class="navbar-nav mr-auto">
+                       <li class="nav-item active"><a class="nav-link" href="#">About</a></li>
+                       <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                       <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                   </ul>
+                </div>
             </div>
         </nav>
     </header>
     <main>
         <div class="container-fluid bg-lightShade">
                     <div class="row">
-                        <div class="container-fluid">
+                        <div class="col-sm-12">
                             <h1 class="text-center">George Beckert</h1>
                         </div>
                     </div>
-                    <div class=row">
-                        <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-3">
                             <img class="georgeImg" src="./public/images/george.jpg" alt="a picture of me, George Beckert"/>
                         </div>
-                    </div>
-                    <!-- TODO add real text -->
-                    <div class="row">
-                        <p class="text-center">
-                            lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                        </p>
+                        <div class="col-sm-12 col-md-9">
+                            <p class="text-center-sm">
+                                lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                            </p>
+                        </div>
                     </div>
 
         </div>
@@ -68,7 +69,7 @@
         <div class="container-fluid bg-lightShade">
             <h1 class="text-center">Blog</h1> 
             <div class="row">
-                <div class="col-12">
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <h2 class="blogTitle">This is a sample blog post</h2>
                     <p>
                         Nothing really to see here, just a sampe blog post. 
@@ -77,9 +78,7 @@
                     </p>
                     <button class="float-right">more</button>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <h2 class="blogTitle">This is a another sample blog post</h2>
                     <p>
                         Nothing really to see here, just a sampe blog post. 
@@ -88,9 +87,7 @@
                     </p>
                     <button class="float-right">more</button>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <h2 class="blogTitle">This is a third sample blog post</h2>
                     <p>
                         Nothing really to see here, just a sampe blog post. 
@@ -99,11 +96,17 @@
                     </p>
                     <button class="float-right">more</button>
                 </div>
-            </div>
+            <div class="row">
         </div>
         
     </main>
     <footer>
+        <div class="container-fluid">
+            <p class="text-white">
+            George Beckert
+            professional junk i guess what goes in a footer?
+            </p>
+        </div>
     </footer>
 </body>
 
