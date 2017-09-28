@@ -1,2 +1,43 @@
 @import "variables";
 @import "./bootstrap/scss/bootstrap.scss";
+
+$project-background: "../images/brickBackground.jpg";
+$lightShade : #e9e2c9;
+$lightAccent: #b3a268;
+$mainBrand: #8f5453;
+$darkAccent:#74757b;
+$darkShade:#2A1f24;
+#navbar{
+    background-color: $mainBrand;
+}
+html{
+
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.bg-lightShade{
+   background-color: $lightShade;
+}
+::-webkit-scrollbar{
+    width: 0px;
+    background: transparent;
+}
+body{
+    background-color: $darkShade;
+}
+.georgeImg{
+   width:50%;
+   margin-left:25%;
+   border-style: solid;
+   border-radius:50%;
+}
+
+#projectContainer{
+    //background-image: url($project-background);
+    background-color: $darkShade;
+}
+.projectOnePictures{
+    $width-percent: 80%;
+    width:$width-percent;
+    margin-left:(100%-$width-percent)/2;
+}
