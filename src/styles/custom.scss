@@ -24,6 +24,7 @@ html{
 }
 body{
     background-color: $darkShade;
+    color: $darkShade;
 }
 .georgeImg{
    width:50%;
@@ -33,11 +34,25 @@ body{
 }
 
 #projectContainer{
-    //background-image: url($project-background);
-    background-color: $darkShade;
+    background: linear-gradient(rgba($darkShade,.7),rgba($darkShade,.7)),url($project-background);
 }
 .projectOnePictures{
     $width-percent: 80%;
     width:$width-percent;
     margin-left:(100%-$width-percent)/2;
+}
+.blogTitle{
+    font-size:1.5rem;
+}
+button{
+    background-color: rgba(255,255,255,0);
+    color: $mainBrand;
+    border:2px solid $mainBrand;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+button:hover{
+   color:$lightShade; 
+   background-color:$mainBrand;
 }
