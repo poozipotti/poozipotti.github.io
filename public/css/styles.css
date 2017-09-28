@@ -5712,7 +5712,8 @@ body {
   border-radius: 50%; }
 
 #projectContainer {
-  background: linear-gradient(rgba(42, 31, 36, 0.7), rgba(42, 31, 36, 0.7)), url("../images/brickBackground.jpg"); }
+  background: linear-gradient(rgba(42, 31, 36, 0.7), rgba(42, 31, 36, 0.7)), url("../images/brickBackground.jpg");
+  background-attachment: fixed; }
 
 .projectOnePictures {
   width: 80%;

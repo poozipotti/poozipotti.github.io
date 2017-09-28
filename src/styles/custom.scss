@@ -36,8 +36,10 @@ body{
 
 #projectContainer{
     background: linear-gradient(rgba($darkShade,.7),rgba($darkShade,.7)),url($project-background);
+    background-attachment: fixed;
 }
 .projectOnePictures{
+
     $width-percent: 80%;
     width:$width-percent;
     margin-left:(100%-$width-percent)/2;
