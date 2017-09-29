@@ -1,0 +1,134 @@
+@import "variables";
+@import "./bootstrap/scss/bootstrap.scss";
+
+$project-background: "../images/beach.jpg";
+//maybe change this back at some point, bluish off white
+//$lightShade : #f4f2f3;
+$lightShade: #FFFFFF;
+$lightAccent: #66a9c6;
+$mainBrand: #36537b;
+$darkAccent:#757c83;
+//$darkShade:#1c1e27;
+$darkShade: #6594b6;
+
+html{
+    overflow: scroll;
+    overflow-x: hidden;
+}
+body{
+  background: $mainBrand;
+}
+h1{
+    font-family:'Dancing Script',cursive;
+}
+#mainTitle{
+    verticle-align: middle;
+}
+::-webkit-scrollbar{
+    width: 0px;
+    background: transparent;
+}
+//////navbar clear//////////
+@keyframes darkToLight{
+    from {background-color: $mainBrand }
+    to {background-color:rgba(white,0)}
+}
+.navbar-clear{
+    background-color: rgba(white,0);
+   @media screen and (max-width: 500px) {
+        position:static;
+    } 
+}
+.navbar-clear-anim{
+   @media screen and (min-width: 500px) {
+        animation-name: darkToLight;
+        animation-duration: .5s;
+    }
+}
+.navbar-clear .navbar-brand,
+.navbar-clear .navbar-text,{
+    color: white;
+}
+.navbar-clear .navbar-nav .nav-link{
+    color: white;
+}
+.navbar-clear .navbar-toggler{
+    color: white;
+}
+.navbar-clear .navbar-toggler:hover{
+    background-color: rgba(black,.3);
+}
+/////////navbar solid/////////
+@keyframes lightToDark{
+    from {background-color:rgba(white,0)}
+    to {background-color: $mainBrand }
+}
+.navbar-solid{
+    background-color: $mainBrand;
+   @media screen and (max-width: 500px) {
+        position:static;
+    }
+   @media screen and (min-width: 500px) {
+        animation-name: lightToDark;
+        animation-duration: .5s;
+    }
+}
+.navbar-solid .navbar-brand,
+.navbar-solid .navbar-text,{
+    color: white;
+}
+.navbar-solid .navbar-nav .nav-link{
+    color: white;
+}
+.navbar-solid .navbar-toggler-icon{
+    color: white;
+}
+.navbar-solid .navbar-toggler:hover{
+    background-color: rgba(black,.3);
+}
+/////////end of navbar solid///////////
+.bg-lightShade{
+   background-color: $lightShade;
+}
+.bg-darkShade{
+   background-color: $darkShade;
+   background-attachment: fixed;
+}
+.sectionPicture{
+        width:40%;
+        margin-left: 30%;
+        border-radius: 10px;
+}
+#headerContainer{
+    height: 90vh;
+    background: linear-gradient(rgba($darkShade,.6),rgba($darkShade,.6)),url($project-background);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.blogTitle{
+    font-size:1.5rem;
+}
+.mainTitle{
+    margin-top: 30vh;
+}
+button{
+    background-color: rgba(255,255,255,0);
+    color: $mainBrand;
+    border:2px solid $mainBrand;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+button:hover{
+   color:$lightShade; 
+   background-color:$mainBrand;
+}
+footer{
+    margin-top: 19px;
+    font-size: .7rem;
+}
+.profile-picture{
+    width:100%;
+}
