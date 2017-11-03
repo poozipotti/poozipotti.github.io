@@ -1,0 +1,27 @@
+$light-primary: #FFFFFF;
+$light-accent: #29416c;
+$main-brand: #CC2828;
+$dark-accent: #7E6b63;
+$dark-primary: #16131A;
+$theme-colors: (
+  primary: $main-brand,
+  secondary: $light-primary,
+  success: $dark-primary,
+  info: $dark-primary,
+  warning: $dark-primary,
+  danger: $dark-primary,
+  light: $light-primary,
+  dark: $dark-primary
+);
+$text-color: white;
+$brand-primary: #000000;
+$primary-font-size: 14pt;
+$btn-color: #FF0000;
+$secondary-font-size: $primary-font-size / 2.5pt;
+
+@import url("https://fonts.googleapis.com/css?family=Muli:500");
+
+//$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-sans-serif: 'Muli', sans-serif !default;
+$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:       $font-family-sans-serif !default;
