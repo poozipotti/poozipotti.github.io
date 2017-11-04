@@ -1,65 +1,50 @@
 @import "variables";
 @import "./bootstrap/scss/bootstrap.scss";
-
-$project-background: "../images/brickBackground.jpg";
-$lightShade : #e9e2c9;
-$lightAccent: #b3a268;
-$mainBrand: #8f5453;
-$darkAccent:#74757b;
-$darkShade:#2A1f24;
-#navbar{
-    background-color: $mainBrand;
-}
+@import url('https://fonts.googleapis.com/css?family=Monoton');
 html{
-
     overflow: scroll;
     overflow-x: hidden;
 }
-.bg-lightShade{
-   background-color: $lightShade;
+h1{
+    font-family: 'Monoton', serif;
 }
 ::-webkit-scrollbar{
     width: 0px;
     background: transparent;
 }
-body{
-    background-color: $darkShade;
-    color: $darkShade;
-}
-.georgeImg{
-   width:50%;
-   margin-left:25%;
-   margin-bottom: 20px;
-   border-style: solid;
-   border-radius:50%;
-}
 
-#projectContainer{
-    background: linear-gradient(rgba($darkShade,.7),rgba($darkShade,.7)),url($project-background);
-    background-attachment: fixed;
+#title{
+   @media screen and (min-width: 500px) {
+        h1{
+            font-size: 5rem;
+        }
+   }
+   @media screen and (max-width: 501px) {
+        h1{
+            font-size:3.8rem;
+        }
+   }
 }
-.projectOnePictures{
-
-    $width-percent: 80%;
-    width:$width-percent;
-    margin-left:(100%-$width-percent)/2;
+.primary-break{
+    border: none;
+    height: 2px;
+    background-color: $main-brand;
+    //this is the small breakpoint in bootsrap (576)
+    @media screen and (max-width: 770px){
+        width: 100%;
+    }
+    @media screen and (min-width: 769px){
+        width: 33%;
+    }
+        
 }
-.blogTitle{
-    font-size:1.5rem;
+.light-break{
+    border: none;
+    height: 2px;
+    background-color: $light-accent;
 }
-button{
-    background-color: rgba(255,255,255,0);
-    color: $mainBrand;
-    border:2px solid $mainBrand;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    margin-top: -10px;
-}
-button:hover{
-   color:$lightShade; 
-   background-color:$mainBrand;
-}
-footer{
-    margin-top: 20px;
-    font-size: .7rem;
+.dark-break{
+    border: none;
+    height: 2px;
+    background-color: $dark-accent;
 }

@@ -1,5 +1,27 @@
+$light-primary: #F2EEE8;
+$light-accent: #EC8D16;
+$main-brand: #0A8A2B;
+$dark-accent: #766251;
+$dark-primary: #222123;
+$theme-colors: (
+  primary: $light-accent,
+  secondary: $light-accent,
+  success: $dark-primary,
+  info: $dark-primary,
+  warning: $dark-primary,
+  danger: $dark-primary,
+  light: $light-primary,
+  dark: $dark-primary
+);
 $text-color: white;
-$brand-primary: #4d4d4d;
+$brand-primary: #000000;
 $primary-font-size: 14pt;
 $btn-color: #FF0000;
 $secondary-font-size: $primary-font-size / 2.5pt;
+
+
+
+//$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-sans-serif: 'Muli', sans-serif !default;
+$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:       $font-family-sans-serif !default;
