@@ -1,62 +1,312 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="George Beckert Full Stack Web Developer">
+    <meta name="author" content="George Beckert">
+
     <title>George Beckert</title>
-    <link rel="stylesheet" type="text/css" href="./public/css/styles.min.css">
-    <script src="./public/javascript/vendor.min.js"></script>
-    <script src="./src/javascript/navbarSolidify.js"></script>
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-</head>
 
-<body class="bg-dark"> 
-    <header>
-    </header> 
-    <main>
-        <div class="row justify-content-center bg-dark">
-            <div class="col-md-2 col-sm-10 mt-5">
-                <img src="./public/images/robot.png" alt="a cute little robot icon" class="img-fluid mx-auto"/>
-            </div>
-            <div class="col-md-12 col-sm-12 " id="title">
-                <h1 class="text-center text-primary my-3" id="title">&middot; George Beckert &middot;</h1>
-                <p class="text-center text-light h2 mb-5">-Web Design &amp; Implementation-</p>
-            </div>
-        </div>
-        <!--
-        <div style="height:800px" class="bg-light"> 
-            <h1 class="text-center ">&middot; Portfolio &middot;</h1>
-        </div>
-        <div style="height:200px" class="bg-dark text-light"> 
-            <h1 class="text-center">&middot; Skills &middot;</h1>
-        </div>
-        <div style="height:500px" class="bg-light"> 
-            <h1 class="text-center">&middot; About  &middot;</h1>
-        </div>
-        -->
-    </main>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <footer>
-        <div class="row bg-dark justify-content-center">
-            <div class="col-sm-10 col-lg-5">
-                <h2 class="h3 mt-4 text-white">Find Me</h2>
-                <hr class="dark-break"/>
-                <p class="text-light">Email: <span class="text-primary">georgebeckert@gmail.com</span></p>
-                <p class="text-light">Github: <a href="https://github.com/poozipotti">Poozipotti</a>
-                <p class="text-light">Linked In: <a href="www.linkedin.com/in/george-beckert">George Beckert</a>
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
 
-            </div>
-            <div class="col-12 mt-5">
-                <div class="text-light text-center">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-               <p class="text-white text-center">By george beckert &copy;2017</p>
-            </div>
-         </div>
-    <a href="./Chanteuse/index.html" style="display:none">Chanteuse</a>
-    <a href="./LighthouseMinigolf/index.html" style="display:none">Lighthouse Minigolf</a>
+    <!-- Custom styles for this template -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">George Beckert</a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase btn-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead bg-primary text-white text-center">
+      <div class="container">
+        <img class="img-fluid mb-5 d-block mx-auto" src="img/profile.png" alt="">
+        <h1 class="text-uppercase mb-0">George Beckert</h1>
+        <hr class="star-light">
+        <h2 class="font-weight-light mb-0">Full Stack Web Developer</h2>
+      </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+          <div class="col-md-6 col-lg-6">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/newmusicfriends.png" alt="">
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="bg-primary text-white mb-0" id="about">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-white">About</h2>
+        <hr class="star-light mb-5">
+        <div class="row">
+          <div class="col-lg-4 ml-auto">
+            <p class="lead">
+				My name is George Beckert, I am currently pursuing a computer science degree at stevens institute of technology.
+				My main focus right now in Computer science is  in full stack web developement. I am the most comfortable using the MERN stack (Mongo,Express,React,Node.js),
+				but I am always pursuing new technologies to become a more well rounded devloper. 
+			</p>
+          </div>
+          <div class="col-lg-4 mr-auto">
+            <p class="lead">
+				When I am not programming I love to play guitar and paint. I love to surround myself with art and music, and I often think of programming as a blank 
+				canvas which I can use to share my ideas with the world. 
+			</p>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <a class="btn btn-xl btn-outline-light" href="resume.pdf" download>
+            <i class="fa fa-download mr-2"></i>
+            Resume
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+			<!--built using formspree -->
+            <form name="sentMessage" id="contactForm"  method="POST" action="https://formspree.io/georgebeckert@gmail.com">
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>Name</label>
+                  <input class="form-control" id="name" name="name" type="text" placeholder="Name" required="required" />
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>Email Address</label>
+                  <input class="form-control" id="email" name="email" type="email" placeholder="Email Address" required="required"/> 
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>Phone Number</label>
+                  <input class="form-control" id="phone" name="phone" type="tel" placeholder="Phone Number" />
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>Message</label>
+                  <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message" required="required"></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <br>
+              <div id="success"></div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Location</h4>
+            <p class="lead mb-0">
+				732 Willow Ave.
+              <br>Hoboken, NJ 07030</p>
+          </div>
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Around the Web</h4>
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.facebook.com/george.beckeert" target="_blank">
+                  <i class="fa fa-fw fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.linkedin.com/in/george-beckert" target="_blank">
+                  <i class="fa fa-fw fa-linkedin"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.github.com/poozipotti" target="_blank">
+                  <i class="fa fa-fw fa-github"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4 class="text-uppercase mb-4">Contact Information</h4>
+            <p class="lead mb-0">
+				Phone: (609)-357-8008	
+              <br>Email: contact@georgebeckert.com
+		   </p>
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
+
+    <div class="copyright py-4 text-center text-white">
+      <div class="container">
+		<small>
+           Freelance is a free to use, open source Bootstrap theme created by
+           <a href="http://startbootstrap.com">Start Bootstrap</a>.
+		</small>
+		<br/>
+        <small>GeorgeBeckert.com Copyright &copy; George Beckert 2018</small>
+		
+      </div>
+    </div>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-to-top d-lg-none position-fixed ">
+      <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">New Music Friends</h2>
+              <hr class="star-dark mb-5">
+			  <a href="http://www.newmusicfriends.com" target="_blank">
+				  <img class="img-fluid mb-5" src="img/portfolio/newmusicfriendsinterior.png" alt="">
+			  </a>
+              <p class="mb-5">
+			  	New Music Friends is a project I have been working to connect people through shared Musical Interests and allow them to discover new music through those connections. 
+				I got the idea from all the beautiful and amazing people I have met at the various concerts and festivals I have been to. These people where from all over the world and 
+				all unique and different, sometimes the only thing it seemed we would have in common is our music. This commonality allowed us to share the other parts of our lives and learn so much, and of course 
+				recommend each other new bands. 
+			  </p>
+              <p class="mb-5">
+				This project is still currently in it's prototype phase. Most of the core functionality is there, but there are many new features on their way. This project was also a learning one. I implemented it using the MERN stack
+				(Mongo, Express, React, Node.js). I chose this stack because it seemed like one I could quickly get up and running, to test the idea out. I used bootstrap on the front end, along with custom SASS code to get the look I wanted
+				out of it. It is deployed on Heroku, to allow for easy scaling and hassle free updates. I learned so much doing this project about the full development cycle of a web app, from the backend to the frontend to deployment. 
+				After this project is complete, I plan to take a step back and look for other technologies I can incorporate into my development strategies, to build off the foundation of knowledge I learned working on the project.
+			  </p>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">Flower Lad</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src="img/portfolio/flowerboy.gif" alt="">
+              <p class="mb-5">
+					Flower Lad was built for my class Game Design I. We were challenged to build a game that did not rely on violence to be compelling. I chose to create a game about a little 
+					flowerpot robot that enjoys poetry and planting flowers. I wanted to create and experience that was uplifting and relaxing, while at the same time being engaging to the player.
+					You can download it yourself to see if i succeeded! 
+			  </p>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/freelancer.min.js"></script>
+
+  </body>
 
 </html>
-
