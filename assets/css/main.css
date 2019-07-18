@@ -1,0 +1,60 @@
+body {
+  background-color: hsl(268, 14%, 15%);
+  color: white;
+}
+.desertBackground {
+  background-image: url("../img/desert.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.titleContainer {
+  width: 90%;
+  padding-right: 10%;
+  padding-top: 50px;
+  margin-top: 50vh;
+  text-align: right;
+  font-family: "Anton", sans-serif;
+}
+#navbar {
+  display: none;
+  position: fixed;
+  font-family: "Anton", sans-serif;
+  top: 0;
+  right: 0;
+  text-align: right;
+  width: 90%;
+  padding-right: 10%;
+}
+
+.navbarShow {
+  display: inherit !important;
+}
+
+h1 {
+  margin: 0;
+}
+h2 {
+  margin: 0;
+}
+
+.hLineDark {
+  margin-top: 20px;
+  height: 1em;
+}
+.sectionTitle {
+  color:white;
+  font-size: 3em;
+  height:3em;
+  text-align: center;
+  font-family: "IBM Plex Serif", serif;
+  text-decoration: underline;
+}
+.portfolioSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  height:1000px;
+}
