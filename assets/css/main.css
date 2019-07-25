@@ -1,6 +1,8 @@
 body {
   background-color: hsl(268, 14%, 15%);
   color: white;
+  margin: 0;
+  padding: 0;
 }
 .desertBackground {
   background-image: url("../img/desert.jpg");
@@ -11,8 +13,10 @@ body {
 }
 .titleContainer {
   width: 90%;
-  padding-right: 10%;
+  margin: 0;
+  padding: 0;
   padding-top: 50px;
+  padding-right:10%;
   margin-top: 50vh;
   text-align: right;
   font-family: "Anton", sans-serif;
@@ -42,6 +46,7 @@ h2 {
 .hLineDark {
   margin-top: 20px;
   height: 1em;
+  width:100%;
 }
 .sectionTitle {
   color:white;
@@ -50,6 +55,7 @@ h2 {
   text-align: center;
   font-family: "IBM Plex Serif", serif;
   text-decoration: underline;
+  width:100%;
 }
 .portfolioSection {
   width: 100%;
