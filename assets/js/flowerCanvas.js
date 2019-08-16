@@ -8,14 +8,14 @@ function startCanvas() {
   myContext.fillRect(0, 0, flowerCanvas.width, flowerCanvas.height);
   var theHeader = document.getElementById("header");
   myContext.canvas.width = window.innerWidth;
-  myContext.canvas.height = window.innerHeight;
+  myContext.canvas.height = 200;
   addRandomFlowers(5, myContext);
   setInterval(function() {
     updateCanvas();
   }, 100);
   window.onresize = function(event) {
     myContext.canvas.width = window.innerWidth;
-    myContext.canvas.height = window.innerHeight;
+    myContext.canvas.height = 200;
   };
 }
 
@@ -52,9 +52,9 @@ function addRandomFlowers(numberOfFlowers) {
     });
     addFlower(
       Math.random() * flowerCanvas.width, //x
-      flowerCanvas.height - flowerCanvas.height * 0.3 - 50, //y
-      (Math.random() * 120 + 20)*(window.innerWidth/800), //width
-      (Math.random() * 120 + 20)*(window.innerWidth/340), //height
+      flowerCanvas.height - (flowerCanvas.height * 0.1), //y
+      (Math.random() * 30 + 10), //width
+      (Math.random() * 30 + 10), //height
       Math.random() * 2, //curve weight
       Math.floor(Math.random() * 30) / 2 + 3, //number
       randomColor + "AA",//color

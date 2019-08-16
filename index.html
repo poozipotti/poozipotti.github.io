@@ -37,22 +37,26 @@
     <div class="hLineDark desertBackground"></div>
 
     <div class="portfolioSection">
-      <a href="#portfolio" class="sectionTitle" id="portfolio">Portfolio</a>
+      <a href="#portfolio" class="sectionTitle" id="portfolio" >Portfolio</a>
       <canvas
         id="flowerCanvas"
-        style="z-index:-1;position: absolute;"
+        style="z-index:-1;"
       ></canvas>
       <div style="display: flex;flex-wrap:wrap;width:60%;" id='porftfolioItems'>
-        <button class="portfolioItem" id='millpond'>MillpondLife</button>
-        <button class="portfolioItem" id='poetryBot'>Poetry Bot</button>
-        <button class="portfolioItem"id='newMusicFriends'>New Music Friends</button>
-        <button class="portfolioItem" id=''>Flower Lad</button>
-        <button class="portfolioItem">item 1</button>
+        <div class="portfolioItem" id='millpond'>
+          MillpondLife
+          <img src="./assets/img/AirCircus.png">
+        </div>
+        <div class="portfolioItem" id='poetryBot'>Poetry Bot</div>
+        <div class="portfolioItem"id='newMusicFriends'>New Music Friends</div>
+        <div class="portfolioItem" id=''>Flower Lad</div>
+        <div class="portfolioItem">item 1</div>
       </div>
       <a style="width:100%;text-align: right;margin-top:260px;padding-right: 20px;color:white" href="#">flowerCanvas src</a>
     </div>
     <div style="height:1000px"></div>
 
     <script src="./assets/js/flowerCanvas.js"></script>
+    <script src="./assets/js/portfolio.js"></script>
   </body>
 </html>

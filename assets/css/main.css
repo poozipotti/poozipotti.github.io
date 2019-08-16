@@ -65,7 +65,8 @@ h2 {
   margin-top: 100px;
 }
 .portfolioItem {
-  border: 1px solid hsl(268, 14%, 40%);
+  text-align: left;
+  color: white;
   width: 100%;
   font-size:2em;
   margin:0;
@@ -73,16 +74,31 @@ h2 {
   height: 165px;
   margin-bottom:20px;
   border-radius: 22px;
+  background-attachment: fixed;
+  background-position-x: center;
+  background-position-y: 25vh;
+  background-repeat: no-repeat;
+  background-size: 270px 480px;
 
+}
+.portfolioItem img{
+  width: 270px;
+  height: 500px;
+  display:block;
+  margin:auto;
+  display: none;
+}
+.portfolioItemExpanded{
+  height: 500px !important;
+  background-image: none !important;
+}
+.portfolioItemExpanded img{
+  display: inline !important;
 }
 #millpond{
   background-color: #17A4DD;
-  background-attachment: fixed;
-  background-position-x: center;
-  background-position-y: 500px;
-  background-repeat: no-repeat;
-  background-size: 25%;
   background-image: url("../img/AirCircus.png");
+
 
 }
 .portfolioItem:focus{
@@ -92,21 +108,11 @@ h2 {
 }
 #poetryBot{
   background-color: coral;
-  background-attachment: fixed;
-  background-position-x: center;
-  background-position-y: 500px;
-  background-repeat: no-repeat;
-  background-size: 25%;
-  background-image: url("../img/community-garden.jpg");
+  background-image: url("../img/poetrybot.png");
 
 }
 #newMusicFriends{
   background-color: springgreen;
-  background-attachment: fixed;
-  background-position-x: center;
-  background-position-y: 500px;
-  background-repeat: no-repeat;
-  background-size: 25%;
   background-image: url("../img/newMusicFriends.png");
 
 }
