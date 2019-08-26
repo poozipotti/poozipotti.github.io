@@ -7,8 +7,8 @@ function startCanvas() {
   myContext = flowerCanvas.getContext("2d");
   myContext.fillRect(0, 0, flowerCanvas.width, flowerCanvas.height);
   var theHeader = document.getElementById("header");
-  myContext.canvas.width = window.innerWidth;
-  myContext.canvas.height = 200;
+  myContext.canvas.width = window.innerWidth * .66;
+  myContext.canvas.height = 165;
   addRandomFlowers(5, myContext);
   setInterval(function() {
     updateCanvas();
@@ -63,7 +63,7 @@ function addRandomFlowers(numberOfFlowers) {
   }
 }
 function updateCanvas() {
-  var primaryColor = "#26212C";
+  var primaryColor = "#87ceeb";
   var secondaryColor = "#3F3931";
   myContext.fillStyle = primaryColor;
   myContext.fillRect(0, 0, flowerCanvas.width, flowerCanvas.height);

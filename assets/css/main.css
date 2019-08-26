@@ -3,6 +3,7 @@ body {
   color: white;
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 .desertBackground {
   background-image: url("../img/desert.jpg");
@@ -15,9 +16,9 @@ body {
   width: 90%;
   margin: 0;
   padding: 0;
-  padding-top: 50px;
+  padding-top: 150px;
   padding-right: 10%;
-  margin-top: 50vh;
+  margin-top: 40vh;
   text-align: right;
   font-family: "Anton", sans-serif;
 }
@@ -30,6 +31,7 @@ body {
   text-align: right;
   width: 90%;
   padding-right: 10%;
+  z-index: 10000;
 }
 
 .navbarShow {
@@ -47,23 +49,34 @@ h2 {
   margin-top: 20px;
   height: 1em;
   width: 100%;
+  margin-bottom: 30vh;
 }
 .sectionTitle {
   color: white;
   font-size: 3em;
   height: 3em;
   text-align: center;
-  font-family: "IBM Plex Serif", serif;
   text-decoration: underline;
   width: 100%;
 }
-.portfolioSection {
+.section {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 100px;
 }
+@media only screen and (max-width: 600px) {
+  #portfolioItems{
+    width:100%;
+  }
+}
+@media only screen and (min-width: 601px) {
+  #portfolioItems{
+    width:66%;
+  }
+}
+
 .portfolioItem {
   text-align: left;
   color: white;
@@ -71,48 +84,111 @@ h2 {
   font-size:2em;
   margin:0;
   padding:0;
-  height: 165px;
-  margin-bottom:20px;
-  border-radius: 22px;
+  height: 200px;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1em 1em 1em 1fr;
+  justify-items: center;
   background-attachment: fixed;
   background-position-x: center;
   background-position-y: 25vh;
   background-repeat: no-repeat;
-  background-size: 270px 480px;
+  background-size: 324px 576px;
 
 }
-.portfolioItem img{
-  width: 270px;
-  height: 500px;
-  display:block;
-  margin:auto;
+.portfolioLink{
+  color:white;
+  margin: 0;
+  padding:0;
+
+  grid-column: 1 / span 1;
+}
+.portfolioItem >* {
+  width:100%;
+}
+.portfolioItemImage{
+  width: 324px;
+  height: 576px;
+  display: none;
+  grid-column: 2 / span 1;
+}
+.portfolioItem p{
   display: none;
 }
 .portfolioItemExpanded{
-  height: 500px !important;
+  height: 600px !important;
   background-image: none !important;
+}
+.portfolioItemExpanded p {
+  display:inherit !important;
 }
 .portfolioItemExpanded img{
   display: inline !important;
 }
 #millpond{
-  background-color: #17A4DD;
+  background-color: #f9b069;
   background-image: url("../img/AirCircus.png");
 
-
-}
-.portfolioItem:focus{
-  height: 825px;
-  background-image: url("../img/AirCircus.png");
 
 }
 #poetryBot{
-  background-color: coral;
+  background-color: #e6a377;
   background-image: url("../img/poetrybot.png");
 
 }
 #newMusicFriends{
-  background-color: springgreen;
+  background-color: #c69088;
   background-image: url("../img/newMusicFriends.png");
 
+}
+#FlowerLad{
+  background-color: #906b68;
+  background-image: url("../img/flowerboy.png");
+}
+#FlowerGarden{
+  background-color: #87ceeb;
+}
+.footer{
+  display: flex;
+  background-image: url("../img/nightskyCropped.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footerSection{
+  width:33%;
+  align-self: center;
+  text-align: center;
+}
+.allSkills{
+  display:flex;
+  flex-wrap: wrap;
+  width:75%;
+  margin:auto;
+  justify-content: left;
+
+}
+
+.skillContainer{
+  width:100%;
+}
+.skillContainer{
+  font-size: 1.3em;
+  height:80px;
+  display:flex;
+}
+.skillContainer > *{
+  align-self: center;
+}
+.skillSubheader{
+  width:80%;
+  margin-top:50px;
+  font-size:1.6em;
+  font-weight:bold;
+  border-bottom: 1px solid white
+}
+.icon{
+  width:120px;
+  margin-left: 50px;
 }

@@ -17,6 +17,10 @@
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
       href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif&display=swap"
       rel="stylesheet"
     />
@@ -30,31 +34,134 @@
       <h2>Full Stack Web Development</h2>
     </div>
 
-    <div class="titleContainer desertBackground" id='header'>
+    <div class="titleContainer desertBackground" id="header">
       <h1 id="titleContainer">George Beckert</h1>
       <h2>Full Stack Web Development</h2>
     </div>
     <div class="hLineDark desertBackground"></div>
 
-    <div class="portfolioSection">
-      <a href="#portfolio" class="sectionTitle" id="portfolio" >Portfolio</a>
-      <canvas
-        id="flowerCanvas"
-        style="z-index:-1;"
-      ></canvas>
-      <div style="display: flex;flex-wrap:wrap;width:60%;" id='porftfolioItems'>
-        <div class="portfolioItem" id='millpond'>
-          MillpondLife
-          <img src="./assets/img/AirCircus.png">
+    <div class="section">
+      <a href="#portfolio" class="sectionTitle" id="portfolio">Portfolio</a>
+      <div style="display: flex;flex-wrap:wrap;" id="portfolioItems">
+        <div class="portfolioItem" id="millpond">
+          <div>MillpondLife</div>
+          <a
+            class="portfolioLink"
+            href="https://qa.millpondlife.com"
+            target="_blank"
+            >link<span style="font-style: italic">(mobile only)</span></a
+          >
+          <img class="portfolioItemImage" src="./assets/img/AirCircus.png" />
         </div>
-        <div class="portfolioItem" id='poetryBot'>Poetry Bot</div>
-        <div class="portfolioItem"id='newMusicFriends'>New Music Friends</div>
-        <div class="portfolioItem" id=''>Flower Lad</div>
-        <div class="portfolioItem">item 1</div>
+        <div class="portfolioItem" id="poetryBot">
+          <div>Poetry Bot</div>
+          <a
+            class="portfolioLink"
+            href="https://github.com/poozipotti/poetryBot"
+            target="_blank"
+            >Heroku App</a
+          >
+          <a
+            class="portfolioLink"
+            href="https://github.com/poozipotti/poetryBot"
+            target="_blank"
+            >Source</a
+          >
+          <img class="portfolioItemImage" src="./assets/img/poetrybot.png" />
+        </div>
+        <div class="portfolioItem" id="newMusicFriends">
+          <div>New Music Friends</div>
+          <a
+            class="portfolioLink"
+            href="https://new-music-friends.herokuapp.com/"
+            target="_blank"
+            >Heroku App</a
+          >
+          <a
+            class="portfolioLink"
+            href="https://github.com/poozipotti/new_music_friends"
+            target="_blank"
+            >Source</a
+          >
+          <img
+            class="portfolioItemImage"
+            src="./assets/img/newMusicFriends.png"
+          />
+        </div>
+        <div class="portfolioItem" id="FlowerLad">
+          <div>Flower Lad</div>
+          <a
+            class="portfolioLink"
+            href="https://drive.google.com/file/d/0B91hdWuwgCjJSjc1RGU0eWtKS0k/view?usp=sharing"
+            target="_blank"
+            >Download</a
+          >
+          <img class="portfolioItemImage" src="./assets/img/flowerboy.png" />
+        </div>
+        <div class="portfolioItem" id="FlowerGarden">
+          <div>Flower Garden</div>
+          <a
+            style="text-align: left;color:white"
+            class="portfolioLink"
+            href="./assets/js/flowerCanvas.js"
+            target="_blank"
+            >source code</a
+          >
+          <p style="height:150px;grid-column: 2;grid-row:2 / span 2;z-index:2">
+            The Flower Garden was a project created to expirment with the HTML
+            canvas
+          </p>
+          <canvas
+            id="flowerCanvas"
+            style="z-index:0;grid-column: 1 / span 3;grid-row: 4;align-self: flex-end"
+          ></canvas>
+        </div>
       </div>
-      <a style="width:100%;text-align: right;margin-top:260px;padding-right: 20px;color:white" href="#">flowerCanvas src</a>
     </div>
-    <div style="height:1000px"></div>
+    <div class="section" style="margin-bottom:50px;">
+      <a href="#About" class="sectionTitle" id="About">about</a>
+      <div style="width:50%;display: flex;justify-content: center">
+        <img src="assets/img/me.jpg" style="height:400px; width:400px;" />
+      </div>
+      <div style="width:50%;margin-top:100px;">
+        <p style="font-size: 1.3em;background-color: rgba(0,0,0,.)">
+          My name is George Beckert, I am currently pursuing a computer science
+          degree at Stevens Institute of Technology. My main focus right now is
+          in full stack web development. I am the most comfortable using the
+          MERN stack (Mongo,Express,React,Node.js), but I am always pursuing new
+          technologies to become a more well rounded developer. When I am not
+          programming I love to play guitar and paint. I strive to surround
+          myself with art and music, and to absorb as much as I can from the
+          people and the world around me. I think of programming as a blank
+          canvas, and the more I learn from other people and other disciplines,
+          the more ideas I have to implement on the virtual side of things.
+        </p>
+      </div>
+    </div>
+    <div class="footer" style="height:400px">
+      <div class="footerSection">
+        <p style="font-size:1.8em">Beltsville, Maryland</p>
+      </div>
+      <div class="footerSection">
+        <a
+          class="linkedInIcon"
+          href="https://www.linkedin.com/in/george-beckert"
+          target="_blank"
+          ><img src="./assets/img/LI-In-Bug.png" class="icon"
+        /></a>
+        <a
+          class="linkedInIcon"
+          href="https://www.github.com/poozipotti"
+          target="_blank"
+          ><img src="./assets/img/GitHub-Mark-Light-120px-plus.png" class="icon"
+        /></a>
+      </div>
+      <div class="footerSection">
+        <p style="font-size:1.8em;text-decoration: underline">
+          georgebeckert@gmail.com
+        </p>
+      </div>
+    </div>
 
     <script src="./assets/js/flowerCanvas.js"></script>
     <script src="./assets/js/portfolio.js"></script>
