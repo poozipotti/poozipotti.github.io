@@ -1,0 +1,10 @@
+body {
+  color: #3D3532;
+  background-color: #FDFDF4;
+	font-family: 'Playfair Display', serif;
+	/*font-family: 'Poppins', sans-serif;*/
+}
+h1 {
+  font-size:2em;
+}
+  
