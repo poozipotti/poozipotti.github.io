@@ -32,7 +32,7 @@ h2 {
 }
 .links {
   display: grid;
-  font-size: calc(1.2rem + 1vw);
+  font-size: calc(1rem + 1vw);
   grid-template-columns: repeat(1,1fr);
 }
 
