@@ -18,7 +18,7 @@
     <h2>Web Development</h2>
     <div class="nav">
       <img
-        src="./alligator.png"
+        src="./assets/images/alligator.png"
         style="grid-row: 1 / span 4;"
         class="alligatorImage"
       />
@@ -33,7 +33,7 @@
     <!--//////////WORK Section///////////////-->
     <div class="section-header-container">
       <h2 class="section-header-text">Work</h2>
-      <img class="section-header-img" src="./batskull1.png" />
+      <img class="section-header-img" src="./assets/images/batskull1.png" />
     </div>
     <div class="work-history-container">
       <div style="width: 100%;">
@@ -64,13 +64,16 @@
     <!--//////////Projects Section///////////////-->
     <div class="section-header-container">
       <h2 class="section-header-text">Projects</h2>
-      <img class="section-header-img" src="./batskull2.png" />
+      <img class="section-header-img" src="./assets/images/batskull2.png" />
     </div>
     <div class="project-container">
       <div class="project-item-container">
         <div>
           <h3 class="project-item-header-text">Music</h3>
-          <img src="./flowers.png" class="project-item-header-img" />
+          <img
+            src="./assets/images/flowers.png"
+            class="project-item-header-img"
+          />
           <h3 class="project-item-header-text">Club</h3>
         </div>
         <p class="project-item-body-text">
@@ -84,43 +87,46 @@
       <div class="project-item-container">
         <div>
           <h3 class="project-item-header-text">Poetry</h3>
-          <img src="./flowers.png" class="project-item-header-img" />
+          <img
+            src="./assets/images/poetrybot.png"
+            class="project-item-header-img"
+          />
           <h3 class="project-item-header-text">Bot</h3>
         </div>
         <p class="project-item-body-text">
-          New Music friends is a project dedicated to connecting people through
-          music. Chatrooms are created and playlists are formed, with each
-          member of the chat choosing a song to embody while they chat. New
-          music friends was built on MERN stack (Mongodb, Express, React,
-          Node.js), with socket.io to handle real time messaging.
+          The Poetry Bot was created using vanilla javascript and python. Using
+          Markov chains, the bot creates poetry from nearly 9 million lines of
+          poetry, courtesy of Project Gutenberg.
         </p>
       </div>
       <div class="project-item-container">
         <div>
           <h3 class="project-item-header-text">Flower</h3>
-          <img src="./flowers.png" class="project-item-header-img" />
+          <img
+            src="./assets/images/flowerboy.gif"
+            class="project-item-header-img"
+          />
           <h3 class="project-item-header-text">Boy</h3>
         </div>
         <p class="project-item-body-text">
-          New Music friends is a project dedicated to connecting people through
-          music. Chatrooms are created and playlists are formed, with each
-          member of the chat choosing a song to embody while they chat. New
-          music friends was built on MERN stack (Mongodb, Express, React,
-          Node.js), with socket.io to handle real time messaging.
+          Flower Lad was developed in unity for Game Development I at Stevens.
+          The game is about a small robot listening to poetry and planting
+          flowers. Flower Lad utilizes c# scripts to grow dynamic fields of
+          flowers which are able to interbreed and mutate. It was also used to
+          tell the player nice little poems.
         </p>
       </div>
       <div class="project-item-container">
         <div>
-          <h3 class="project-item-header-text">Music</h3>
-          <img src="./flowers.png" class="project-item-header-img" />
-          <h3 class="project-item-header-text">Club</h3>
+          <h3 class="project-item-header-text">Garden</h3>
+          <div class="project-item-header-img" id="flowerCanvasContainer">
+            <canvas id="flowerCanvas" style="width:100%;height:100%"></canvas>
+          </div>
+          <h3 class="project-item-header-text">JS</h3>
         </div>
         <p class="project-item-body-text">
-          New Music friends is a project dedicated to connecting people through
-          music. Chatrooms are created and playlists are formed, with each
-          member of the chat choosing a song to embody while they chat. New
-          music friends was built on MERN stack (Mongodb, Express, React,
-          Node.js), with socket.io to handle real time messaging.
+          The Flower Garden was a project created to experiment with the HTML
+          canvas, and try and make something cool with vanilla tools!
         </p>
       </div>
     </div>
@@ -136,7 +142,7 @@
     <div class="about-container">
       <div><!--placeholder--></div>
       <div class="about-container-inner">
-        <img src="./me.jpg" class="about-container-img" />
+        <img src="./assets/images/me.jpg" class="about-container-img" />
         <p>
           My name is George Beckert, I am currently working as a software
           developer for A Project management company named Sitetracker. My main
@@ -156,21 +162,24 @@
     <!--////////////////Footer /////////////////-->
     <div class="footer">
       <p>Brooklyn</p>
-      <a
-        class="linkedInIcon"
-        href="https://www.linkedin.com/in/george-beckert"
-        target="_blank"
-        ><img src="./github-icon.png" class="icon"
-      /></a>
-      <a
-        class="linkedInIcon"
-        href="https://www.github.com/poozipotti"
-        target="_blank"
-        ><img src="./linked-in.png" class="icon"
-      /></a>
+      <div style="display:grid;grid-template-columns:1fr 1fr;column-gap:2rem;">
+        <a
+          class="linkedInIcon"
+          href="https://www.linkedin.com/in/george-beckert"
+          target="_blank"
+          ><img src="./assets/images/github-icon.png" class="icon" 
+        /></a>
+        <a
+          class="linkedInIcon"
+          href="https://www.github.com/poozipotti"
+          target="_blank"
+          ><img src="./assets/images/linked-in.png" class="icon"
+        /></a>
+      </div>
       <p>
         georgebeckert@gmail.com
       </p>
     </div>
   </body>
+  <script src="./assets/javascript/flowerCanvas.js"></script>
 </html>
