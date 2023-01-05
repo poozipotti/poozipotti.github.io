@@ -170,9 +170,9 @@ nav {
 
 .project-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-items: center;
-  grid-gap: 3rem;
+  grid-gap: 8rem;
 }
 .project-item-header-container {
   display: grid;
@@ -280,7 +280,7 @@ nav {
 
 .project-item-container {
   display: grid;
-  width: calc(80% - 5rem);
+  width: 100%;
   grid-column-gap: 1rem;
 }
 .project-item-header-img {
