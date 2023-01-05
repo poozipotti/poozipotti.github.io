@@ -24,20 +24,42 @@ h1 {
   font-size: calc(1.5rem + 2vw);
   font-weight: 400;
   margin: 0;
-  margin-left: 5rem;
   margin-top: 15vh;
+  margin-left: 10px;
 }
 
 h2 {
   font-size: calc(1rem + 1vw);
   font-weight: 400;
   margin: 0;
-  margin-left: 5.1rem;
+  margin-left: 10px;
 }
 
 nav {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.links-container {
+  position: fixed;
+  top: 0;
+  padding-top: 350px;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    rgb(var(---main-light), 50%) 1%,
+    rgb(var(---main-light), 30%) 10%,
+    rgb(var(---main-light), 0) 100%
+  );
+}
+
+@media only screen and (max-width: 900px) {
+  .links-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0);
+  }
 }
 .links {
   display: grid;
@@ -68,15 +90,30 @@ nav {
     margin-right: 20px;
   }
 }
+.website-main-section {
+  width: calc(66% - 120px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+@media only screen and (max-width: 900px) {
+  .website-main-section {
+    width: 100vw;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
 
 .section-header-container {
   display: grid;
   place-items: center;
   grid-template-columns: 1fr;
-  width: 100px;
-  margin-left: 5.1rem;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 .section-header-img {
   width: 100px;
@@ -95,29 +132,33 @@ nav {
 
 .work-history-container {
   display: grid;
-  width: calc(66% - 5rem);
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-column-gap: 5rem;
-  margin-left: 5rem;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 3rem;
+  margin-bottom: 6rem;
 }
-.work-history-header-one {
-  font-weight: 400;
-  font-size: calc(2rem + 1vw);
-  margin: 0;
-  margin-top: 1.5rem;
+.work-history-divider {
+  height: 1px;
+  width: 90%;
+  background-color: black;
   margin-bottom: 1rem;
 }
-.work-history-header-two {
-  font-weight: 400;
-  font-size: calc(1.5rem + 0.5vw);
+.work-history-header-one {
+  font-weight: bold;
+  font-size: calc(1.2rem + 1vw);
   margin: 0;
-  margin-bottom: 2rem;
+}
+.work-history-header-two {
+  font-family: var(---body-font);
+  font-weight: bold;
+  font-size: calc(1rem);
+  margin: 0;
+  margin-bottom: 1rem;
 }
 .work-history-body-text {
   font-family: var(---body-font);
+  font-size: 1rem;
   margin: 0;
-  margin-bottom: 5rem;
-  font-size: 1.2rem;
 }
 
 .project-container {
@@ -234,7 +275,6 @@ nav {
 .project-item-container {
   display: grid;
   width: calc(80% - 5rem);
-  margin-left: 5rem;
   grid-column-gap: 1rem;
   align-items: center;
 }
@@ -266,6 +306,7 @@ canvas {
 
 .about-container {
   display: grid;
+  z-index: 50;
   width: 100vw;
   grid-template-columns: 1.5fr minmax(300px, 1fr) 1.5fr;
   background-image: url("./assets/images/FooterFish.png");
@@ -273,6 +314,7 @@ canvas {
   background-color: rgb(var(---main-dark));
   padding-bottom: 100px;
   padding-top: 100px;
+  position: relative;
 }
 .about-container-inner {
   background-color: rgba(var(---main-dark), 0.5);
