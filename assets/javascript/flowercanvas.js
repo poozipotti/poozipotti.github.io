@@ -4,17 +4,22 @@ var myContext = null;
 var maxFlowers = 15;
 var scrollCount = 4;
 var currentScrollCount = 0;
+function setCanvasToWindowSize() {
+  flowerCanvas = document.getElementById("flowerCanvas");
+  const windowHeight = window.innerHeight;
+  const windowWidth = window.innerWidth;
+  flowerCanvas.setAttribute("width", windowWidth);
+  flowerCanvas.setAttribute("height", windowHeight);
+}
 function startCanvas() {
   flowerCanvas = document.getElementById("flowerCanvas");
   flowerCanvasContainer = document.getElementById("flowerCanvasContainer");
   myContext = flowerCanvas.getContext("2d");
-  const tempWidth = flowerCanvasContainer.clientWidth;
-  const tempHeight = flowerCanvasContainer.clientHeight;
-  myContext.canvas.width = tempWidth;
-  myContext.canvas.height = tempHeight;
+  setCanvasToWindowSize();
   window.onresize = function (_e) {
-    myContext.canvas.width = tempWidth;
-    myContext.canvas.height = tempHeight;
+    setCanvasToWindowSize();
+    flowers = createRandomFlowers(flowers.length);
+    updateCanvas();
   };
   window.onscroll = function (_e) {
     currentScrollCount++;
@@ -57,7 +62,7 @@ function createRandomFlowers(numberOfFlowers) {
     const randomColor = "#000000".replace(/0/g, function () {
       return (~~(Math.random() * 16)).toString(16);
     });
-    const initialY = flowerCanvas.height -200;
+    const initialY = flowerCanvas.height - 200;
     flowers.push({
       x: Math.random() * flowerCanvas.width, //x
       y: initialY, //y
