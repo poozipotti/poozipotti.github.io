@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 :root {
   /*rgb values used here so that opacity can be easily added*/
   ---main-dark: 62, 53, 56;
@@ -11,13 +14,12 @@ body {
   background-color: rgb(var(---main-light));
   font-family: var(---header-font);
   font-weight: 400;
-  width: 100vw;
-  overflow-x: hidden;
 }
 
 .alligatorImage {
   width: 100%;
   grid-column: 1 / span 2;
+  grid-row: 1 / span 4;
 }
 
 h1 {
@@ -36,8 +38,11 @@ h2 {
 }
 
 nav {
+  width: 100%;
+  overflow: hidden;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin:0;
 }
 .links-container {
   position: fixed;
@@ -55,9 +60,8 @@ nav {
 
 @media only screen and (max-width: 900px) {
   .links-container {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
+    position: static;
+    height: auto;
     background-color: rgba(0, 0, 0, 0);
   }
 }
@@ -83,26 +87,29 @@ nav {
 }
 
 @media only screen and (max-width: 900px) {
+  .links-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .links {
     grid-template-columns: repeat(3, 33vw);
     text-align: center;
-    margin-left: 20px;
-    margin-right: 20px;
   }
 }
 .website-main-section {
-  width: calc(66% - 120px);
+  width: 66%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 60px;
-  margin-right: 60px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 @media only screen and (max-width: 900px) {
   .website-main-section {
-    width: 100vw;
-    margin-left: 10px;
-    margin-right: 10px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
   }
 }
 
@@ -299,23 +306,23 @@ nav {
   position: fixed;
   top: 0;
   z-index: -1;
+  overflow: hidden;
 }
 canvas {
   opacity: 0.2;
 }
 
 .about-container {
-  display: grid;
-  z-index: 50;
-  width: 100vw;
-  grid-template-columns: 1.5fr minmax(300px, 1fr) 1.5fr;
+  width: 100%;
   background-image: url("./assets/images/FooterFish.png");
   background-size: cover;
   background-color: rgb(var(---main-dark));
   padding-bottom: 100px;
   padding-top: 100px;
-  position: relative;
+  overflow: hidden;
+  margin: 0;
 }
+
 .about-container-inner {
   background-color: rgba(var(---main-dark), 0.5);
   color: rgb(var(---main-light));
@@ -323,6 +330,9 @@ canvas {
   border-radius: 10px;
   padding: 2rem;
   font-family: var(---body-font);
+  width: 100%;
+  overflow: hidden;
+  max-width: 400px;
 }
 .about-container-img {
   width: 100%;

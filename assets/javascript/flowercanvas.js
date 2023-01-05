@@ -86,7 +86,6 @@ function createRandomFlowers(numberOfFlowers) {
 function updateCanvas() {
   active = false;
   var primaryColor = "#fdfdf1";
-  var secondaryColor = "#3F3931";
   myContext.fillStyle = primaryColor;
   myContext.fillRect(0, 0, flowerCanvas.width, flowerCanvas.height);
 
@@ -107,8 +106,6 @@ function updateCanvas() {
   flowers = flowers.map((flower) =>
     flower.y >= flower.maxHeight ? flower : createRandomFlowers(1)[0]
   );
-  myContext.fillStyle = secondaryColor;
-  myContext.fillRect(0, flowerCanvas.height - 10, flowerCanvas.width, 10);
 }
 window.onload = function () {
   startCanvas();
