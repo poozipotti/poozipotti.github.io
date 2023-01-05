@@ -62,7 +62,7 @@ nav {
   .links-container {
     position: static;
     height: auto;
-    background-color: rgba(0, 0, 0, 0);
+     background:none;
   }
 }
 .links {
@@ -207,6 +207,17 @@ nav {
   justify-content: space-around;
   align-items: center;
   text-decoration: none;
+  width: 80%;
+  height: min-content;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  align-self: center;
+  justify-self: center;
+  border: 3px solid rgb(var(---main-dark));
+  color: rgb(var(---main-dark));
+  background-color: rgb(var(---main-light));
+  box-shadow: 4px 3px rgba(0, 0, 0, 0.8);
 }
 @media (hover: none) {
   .project-item-header-overlay-skills {
@@ -229,6 +240,12 @@ nav {
     background-color: rgb(var(---main-light));
     box-shadow: 4px 3px rgba(0, 0, 0, 0.8);
   }
+  .project-item-header-overlay-link:hover {
+    background-color: rgb(var(---main-dark));
+    color: rgb(var(---main-light));
+
+  }
+
 }
 @media (hover: hover) {
   .project-item-header-overlay-container {
