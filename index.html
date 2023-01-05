@@ -17,10 +17,10 @@
   <body>
     <h1>George Beckert</h1>
     <h2>Full-Stack Web Development</h2>
-    <div class="nav">
+    <nav>
       <img
         src="./assets/images/alligator.png"
-        style="grid-row: 1 / span 4;"
+        style="grid-row: 1 / span 4"
         class="alligatorImage"
       />
       <span class="links">
@@ -29,7 +29,7 @@
         <!--<a>Blog</a>-->
         <a href="#About">About</a>
       </span>
-    </div>
+    </nav>
 
     <!--//////////WORK Section///////////////-->
     <div class="section-header-container">
@@ -37,7 +37,7 @@
       <img class="section-header-img" src="./assets/images/batskull1.png" />
     </div>
     <div class="work-history-container">
-      <div style="width: 100%;">
+      <div style="width: 100%">
         <h3 class="work-history-header-one">StageFront</h3>
         <h4 class="work-history-header-two">Frontend Web Developer</h4>
         <p class="work-history-body-text">
@@ -153,34 +153,13 @@
           poetry, courtesy of Project Gutenberg.
         </p>
       </div>
-      <div class="project-item-container">
-        <div>
-          <h3 class="project-item-header-text">Javascript Garden</h3>
-          <div class="project-item-header-overlay-container">
-            <div class="project-item-header-img" id="flowerCanvasContainer">
-              <canvas id="flowerCanvas" style="width:100%"></canvas>
-            </div>
-            <div class="project-item-header-overlay-skills">
-              <img src="./assets/company-logos/html.png" />
-              <img src="./assets/company-logos/javascript.png" />
-            </div>
-          </div>
-        </div>
-        <p class="project-item-body-text">
-          The Flower Garden was a project created to experiment with the HTML
-          canvas, and try and make something cool with vanilla tools! You can
-          find the unminified Javascript being used on this page.
-        </p>
-      </div>
+      <div></div>
     </div>
 
-    <!--//////////Blog Section///////////////-->
-    <!--/////////Unfinished/////////////////-->
-    <!--<div class="section-header-container">
-      <h2 class="section-header-text">Blog</h2>
-      <img class="section-header-img" src="./batskull3.png" />
-    </div>-->
-
+    <!--//////////flower canvas stopping point///////////////-->
+    <div class="project-item-header-img" id="flowerCanvasContainer">
+      <canvas id="flowerCanvas" style="width: 100%;height:100%"></canvas>
+    </div>
     <!--//////////About Section///////////////-->
     <div class="about-container">
       <div><!--placeholder--></div>
@@ -209,7 +188,9 @@
     <!--////////////////Footer /////////////////-->
     <div class="footer">
       <p>Brooklyn</p>
-      <div style="display:grid;grid-template-columns:1fr 1fr;column-gap:2rem;">
+      <div
+        style="display: grid; grid-template-columns: 1fr 1fr; column-gap: 2rem"
+      >
         <a
           class="linkedInIcon"
           href="https://www.linkedin.com/in/george-beckert"
@@ -224,9 +205,7 @@
           ><img src="./assets/images/github-icon.png" class="icon"
         /></a>
       </div>
-      <p>
-        georgebeckert@gmail.com
-      </p>
+      <p>georgebeckert@gmail.com</p>
     </div>
   </body>
   <script src="./assets/javascript/flowercanvas.js"></script>

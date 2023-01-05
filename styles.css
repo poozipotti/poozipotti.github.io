@@ -3,8 +3,8 @@
   ---main-dark: 62, 53, 56;
   ---darker-dark: 27, 24, 24;
   ---main-light: 253, 253, 241;
-  ---header-font: 'Playfair Display', serif;
-  ---body-font: 'Poppins', sans-serif;
+  ---header-font: "Playfair Display", serif;
+  ---body-font: "Poppins", sans-serif;
 }
 body {
   color: rgb(rgb(var(---main-dark)));
@@ -35,7 +35,7 @@ h2 {
   margin-left: 5.1rem;
 }
 
-.nav {
+nav {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
@@ -51,10 +51,12 @@ h2 {
 
 @media (hover: hover) {
   .links > a:hover {
-    font-size: calc(1.2rem + 1vw);
     text-decoration: none;
     background-color: rgb(var(---main-dark));
     color: rgb(var(---main-light));
+  }
+  .links {
+    padding-left: 20px;
   }
 }
 
@@ -62,6 +64,8 @@ h2 {
   .links {
     grid-template-columns: repeat(3, 33vw);
     text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 
@@ -77,13 +81,16 @@ h2 {
 .section-header-img {
   width: 100px;
   grid-area: 1 / 1 / 1 / 1;
+  z-index: -2;
 }
 .section-header-text {
   z-index: 2;
   grid-area: 1 / 1 / 1 / 1;
-  font-size: calc(2rem + 2vw);
+  font-size: calc(1.2rem + 2vw);
   text-align: center;
   margin: 0;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .work-history-container {
@@ -247,14 +254,21 @@ h2 {
   font-family: var(---body-font);
 }
 #flowerCanvasContainer {
-  background-color: #3f3931;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+canvas {
+  opacity: 0.2;
 }
 
 .about-container {
   display: grid;
   width: 100vw;
   grid-template-columns: 1.5fr minmax(300px, 1fr) 1.5fr;
-  background-image: url('./assets/images/FooterFish.png');
+  background-image: url("./assets/images/FooterFish.png");
   background-size: cover;
   background-color: rgb(var(---main-dark));
   padding-bottom: 100px;
