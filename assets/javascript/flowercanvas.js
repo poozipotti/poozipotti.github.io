@@ -38,7 +38,12 @@ function drawFlower({ x, y, width, height, curveWeight, petalCount, color }) {
   var TO_RADIANS = Math.PI / 180;
   myContext.translate(x, y);
   myContext.fillStyle = "#73ba8d";
-  myContext.fillRect(-10, 0, 20, flowerCanvas.height - y);
+  myContext.fillRect(
+    -0.5 * (flowerCanvas.width / 150 + 10),
+    0,
+    flowerCanvas.width / 150 + 10,
+    flowerCanvas.height - y
+  );
   for (var j = 0; j < petalCount; j++) {
     myContext.fillStyle = color;
     myContext.beginPath();
@@ -66,8 +71,8 @@ function createRandomFlowers(numberOfFlowers) {
     flowers.push({
       x: Math.random() * flowerCanvas.width, //x
       y: initialY, //y
-      width: Math.random() * 200 + 100, //width
-      height: Math.random() * 200 + 100, //height
+      width: Math.random() * (flowerCanvas.width / 10) + 100, //width
+      height: Math.random() * (flowerCanvas.width / 10) + 100, //height
       curveWeight: Math.random() * 2, //curve weight
       petalCount: Math.floor(Math.random() * 30) / 2 + 3, //petalCount
       color: `${randomColor}AA`, //color
