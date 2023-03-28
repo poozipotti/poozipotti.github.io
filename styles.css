@@ -75,6 +75,11 @@ nav {
 .links > a {
   color: rgb(var(---main-dark));
 }
+.links > a.selected {
+    text-decoration: none;
+    background-color: rgb(var(---main-dark));
+    color: rgb(var(---main-light));
+}
 
 @media (hover: hover) {
   .links > a:hover {
