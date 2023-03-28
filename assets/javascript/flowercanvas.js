@@ -8,6 +8,10 @@ function setCanvasToWindowSize() {
   flowerCanvas = document.getElementById("flowerCanvas");
   const windowHeight = window.innerHeight;
   const windowWidth = window.innerWidth;
+  console.log(windowWidth);
+  if (windowWidth < 600) {
+    maxFlowers = 5;
+  }
   flowerCanvas.setAttribute("width", windowWidth);
   flowerCanvas.setAttribute("height", windowHeight);
 }
