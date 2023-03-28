@@ -20,6 +20,7 @@ function startCanvas() {
   flowerCanvasContainer = document.getElementById("flowerCanvasContainer");
   myContext = flowerCanvas.getContext("2d");
   setCanvasToWindowSize();
+  createRandomFlowers(3)
   window.onresize = function (_e) {
     setCanvasToWindowSize();
     flowers = createRandomFlowers(flowers.length);
