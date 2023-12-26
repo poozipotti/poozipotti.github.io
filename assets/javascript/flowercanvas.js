@@ -8,7 +8,6 @@ function setCanvasToWindowSize() {
   flowerCanvas = document.getElementById("flowerCanvas");
   const windowHeight = window.innerHeight;
   const windowWidth = window.innerWidth;
-  console.log(windowWidth);
   if (windowWidth < 600) {
     maxFlowers = 5;
   }
@@ -20,7 +19,7 @@ function startCanvas() {
   flowerCanvasContainer = document.getElementById("flowerCanvasContainer");
   myContext = flowerCanvas.getContext("2d");
   setCanvasToWindowSize();
-  createRandomFlowers(3)
+  flowers = createRandomFlowers(3, { initialY: 300 });
   window.onresize = function (_e) {
     setCanvasToWindowSize();
     flowers = createRandomFlowers(flowers.length);
@@ -66,7 +65,7 @@ function drawFlower({ x, y, width, height, curveWeight, petalCount, color }) {
   myContext.fill();
   myContext.translate(-x, -y);
 }
-function createRandomFlowers(numberOfFlowers) {
+function createRandomFlowers(numberOfFlowers, options) {
   const flowers = [];
   for (var i = 0; i < numberOfFlowers; i++) {
     const randomColor = "#000000".replace(/0/g, function () {
@@ -75,7 +74,7 @@ function createRandomFlowers(numberOfFlowers) {
     const initialY = flowerCanvas.height - 200;
     flowers.push({
       x: Math.random() * flowerCanvas.width, //x
-      y: initialY, //y
+      y: options?.initialY || initialY, //y
       width: Math.random() * (flowerCanvas.width / 10) + 100, //width
       height: Math.random() * (flowerCanvas.width / 10) + 100, //height
       curveWeight: Math.random() * 2, //curve weight

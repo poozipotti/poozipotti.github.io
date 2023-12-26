@@ -8,6 +8,7 @@
   ---main-light: 253, 253, 241;
   ---header-font: "Playfair Display", serif;
   ---body-font: "Poppins", sans-serif;
+  
 }
 body {
   color: rgb(rgb(var(---main-dark)));
@@ -15,100 +16,56 @@ body {
   font-family: var(---header-font);
   font-weight: 400;
   overflow-x: hidden;
+  width: 100vw;
 }
 
+.header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-text {
+  max-width: 1500px;
+  width: 100vw;
+  padding: 50px;
+  padding-bottom: 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%,500px), 1fr));
+  justify-items: center;
+}
+.header-skillz {
+  display: grid;
+  grid-template-columns: 130px 130px;
+  row-gap: .5rem;
+}
+.header-skillz-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
 .alligatorImage {
   width: 100%;
-  grid-column: 1 / span 2;
-  grid-row: 1 / span 4;
 }
 
 h1 {
   font-size: calc(1.5rem + 2vw);
   font-weight: 400;
   margin: 0;
-  margin-top: 15vh;
-  margin-left: 10px;
 }
 
 h2 {
-  font-size: calc(1rem + 1vw);
+  font-size: calc(0.7rem + 1vw);
   font-weight: 400;
-  margin: 0;
-  margin-left: 10px;
 }
 
-nav {
-  width: 100%;
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  margin: 0;
-}
-.links-container {
-  position: fixed;
-  top: 0;
-  padding-top: 350px;
-  height: 100vh;
-  width: 100%;
-  background: linear-gradient(
-    to right,
-    rgb(var(---main-light), 50%) 1%,
-    rgb(var(---main-light), 30%) 10%,
-    rgb(var(---main-light), 0) 100%
-  );
-}
-
-@media only screen and (max-width: 900px) {
-  .links-container {
-    position: static;
-    height: auto;
-     background:none;
-  }
-}
-.links {
-  display: grid;
-  font-size: calc(1rem + 1vw);
-  grid-template-columns: repeat(1, 1fr);
-  grid-row-gap: 0.5rem;
-}
-.links > a {
-  color: rgb(var(---main-dark));
-}
-.links > a.selected {
-    text-decoration: none;
-    background-color: rgb(var(---main-dark));
-    color: rgb(var(---main-light));
-}
-
-@media (hover: hover) {
-  .links > a:hover {
-    text-decoration: none;
-    background-color: rgb(var(---main-dark));
-    color: rgb(var(---main-light));
-  }
-  .links {
-    padding-left: 20px;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .links-container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .links {
-    grid-template-columns: repeat(3, 33vw);
-    text-align: center;
-  }
-}
 .website-main-section {
-  width: 66%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
   padding-left: 60px;
   padding-right: 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media only screen and (max-width: 900px) {
   .website-main-section {
@@ -145,16 +102,24 @@ nav {
 
 .work-history-container {
   display: grid;
+  max-width: 1000px;
   width: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%,300px), 1fr));
   grid-gap: 3rem;
   margin-bottom: 6rem;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .work-history-divider {
   height: 1px;
   width: 90%;
   background-color: black;
   margin-bottom: 1rem;
+  margin-top: 1rem;
+
 }
 .work-history-header-one {
   font-weight: bold;
@@ -166,7 +131,7 @@ nav {
   font-weight: bold;
   font-size: calc(1rem);
   margin: 0;
-  margin-bottom: 1rem;
+  width: max-content;
 }
 .work-history-body-text {
   font-family: var(---body-font);
@@ -175,10 +140,17 @@ nav {
 }
 
 .project-container {
+  max-width: 1000px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-items: center;
-  grid-gap: 8rem;
+  column-gap: 6rem;
+  row-gap: 3rem;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .project-item-header-container {
   display: grid;
@@ -249,9 +221,7 @@ nav {
   .project-item-header-overlay-link:hover {
     background-color: rgb(var(---main-dark));
     color: rgb(var(---main-light));
-
   }
-
 }
 @media (hover: hover) {
   .project-item-header-overlay-container {
@@ -334,6 +304,7 @@ canvas {
 }
 
 .about-container {
+  position: block;
   width: 100%;
   background-image: url("./assets/images/FooterFish.png");
   background-size: cover;
@@ -343,6 +314,7 @@ canvas {
   overflow: hidden;
   margin: 0;
 }
+
 
 .about-container-inner {
   background-color: rgba(var(---main-dark), 0.5);
@@ -354,6 +326,8 @@ canvas {
   width: 100%;
   overflow: hidden;
   max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .about-container-img {
   width: 100%;

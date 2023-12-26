@@ -27,19 +27,54 @@
     <div id="flowerCanvasContainer">
       <canvas id="flowerCanvas"> </canvas>
     </div>
-    <h1>George Beckert</h1>
-    <h2>Full-Stack Web Development</h2>
-    <nav>
-      <img src="./assets/images/alligator.png" class="alligatorImage" />
-      <div />
-      <span class="links-container">
-        <div class="links">
-          <a href="#Work" id="work-link">Work</a>
-          <a href="#Projects" id="projects-link">Projects</a>
-          <a href="#About" id="about-link">About</a>
+    <div class="header">
+      <div class="header-text">
+        <div>
+          <h1>George Beckert</h1>
+          <h2>Full-Stack Web Development</h2>
         </div>
-      </span>
-    </nav>
+        <div>
+          <p>
+            Welcome to my site, I hope you enjoy it! Scroll down to see my work
+            history and personal projects.
+          </p>
+          <p>
+            I focus primarily on the front end, and have experience with the
+            following tools:
+          </p>
+          <div class="header-skillz-container">
+            <div>
+              <h4 class="work-history-header-two">Frontend</h4>
+              <ul class="header-skillz">
+                <li>React</li>
+                <li>Vue.js</li>
+                <li>Svelte</li>
+                <li>TailwindCSS</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="work-history-header-two">Backend</h4>
+              <ul class="header-skillz">
+                <li>Express</li>
+                <li>Node.js</li>
+                <li>MongoDB</li>
+                <li>Postgresql</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="work-history-header-two">CI/CD & Deployment</h4>
+              <ul class="header-skillz">
+                <li>GCP</li>
+                <li>*Nix systems</li>
+                <li>AWS</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img src="./assets/images/alligator.png" class="alligatorImage" />
+    </div>
     <section class="website-main-section">
       <!--//////////WORK Section///////////////-->
       <div id="work-section">
@@ -53,19 +88,15 @@
               style="
                 display: flex;
                 justify-content: space-between;
-                align-items: center;
+                align-items: end;
                 width: 90%;
                 margin: 0;
               "
             >
-              <div>
-                <h3 class="work-history-header-one">Mighty</h3>
-                <h4 class="work-history-header-two">
-                  Senior Software Engineer
-                </h4>
-              </div>
+              <h3 class="work-history-header-one">Mighty</h3>
               <p class="work-history-header-two">(Oct 2020 - Present)</p>
             </div>
+            <h4 class="work-history-header-two">Senior Software Engineer</h4>
             <div class="work-history-divider"><!----horizontal rule---></div>
             <p class="work-history-body-text">
               Currently I am a senior Fullstack Engineer at Mighty. We build
@@ -81,17 +112,15 @@
               style="
                 display: flex;
                 justify-content: space-between;
-                align-items: center;
+                align-items: end;
                 width: 90%;
                 margin: 0;
               "
             >
-              <div>
-                <h3 class="work-history-header-one">NS8</h3>
-                <h4 class="work-history-header-two">Web Developer</h4>
-              </div>
+              <h3 class="work-history-header-one">NS8</h3>
               <p class="work-history-header-two">(Jun 2020 - Sep 2020)</p>
             </div>
+            <h4 class="work-history-header-two">Web Developer</h4>
             <div class="work-history-divider"><!----horizontal rule---></div>
             <p class="work-history-body-text">
               I worked building integrations with multiple e commerce platforms
@@ -105,17 +134,15 @@
               style="
                 display: flex;
                 justify-content: space-between;
-                align-items: center;
+                align-items: end;
                 width: 90%;
                 margin: 0;
               "
             >
-              <div>
-                <h3 class="work-history-header-one">StageFront</h3>
-                <h4 class="work-history-header-two">Fullstack Web Developer</h4>
-              </div>
+              <h3 class="work-history-header-one">StageFront</h3>
               <p class="work-history-header-two">(Sep 2019 - Jun 2020)</p>
             </div>
+            <h4 class="work-history-header-two">Fullstack Web Developer</h4>
             <div class="work-history-divider"><!----horizontal rule---></div>
             <p class="work-history-body-text">
               Previously I worked as a Web Developer at Stage Front Tickets, a
@@ -131,17 +158,15 @@
               style="
                 display: flex;
                 justify-content: space-between;
-                align-items: center;
+                align-items: end;
                 width: 90%;
                 margin: 0;
               "
             >
-              <div>
-                <h3 class="work-history-header-one">Sitetracker</h3>
-                <h4 class="work-history-header-two">Fullstack Web Developer</h4>
-              </div>
+              <h3 class="work-history-header-one">Sitetracker</h3>
               <p class="work-history-header-two">(Sep 2018 - Sep 2019)</p>
             </div>
+            <h4 class="work-history-header-two">Fullstack Web Developer</h4>
             <div class="work-history-divider"><!----horizontal rule---></div>
             <p class="work-history-body-text">
               Previously I was working as a Software Developer at Sitetracker, a
@@ -232,26 +257,24 @@
     <!--//////////About Section///////////////-->
     <div id="about-section">
       <div class="about-container">
-        <div class="website-main-section">
-          <div class="about-container-inner">
-            <img
-              src="./assets/images/me.jpg"
-              class="about-container-img"
-              id="About"
-            />
-            <p>
-              My name is George Beckert, I am currently working as a software
-              developer at Mighty. I develop full stack web apps, with a focus
-              on the front-end. I am the most comfortable with Node.js and
-              React, but I am always pursuing new technologies to become a more
-              well rounded and current developer. When I am not programming I
-              love to play guitar and paint. I strive to surround myself with
-              art and music, and to absorb as much as I can from the people and
-              the world around me. I think of programming as a blank canvas, and
-              the more I learn from other people and other disciplines, the more
-              ideas I am able to implement.
-            </p>
-          </div>
+        <div class="about-container-inner">
+          <img
+            src="./assets/images/me.jpg"
+            class="about-container-img"
+            id="About"
+          />
+          <p>
+            My name is George Beckert, I am currently working as a software
+            developer at Mighty. I develop full stack web apps, with a focus on
+            the front-end. I am the most comfortable with Node.js and React, but
+            I am always pursuing new technologies to become a more well rounded
+            and current developer. When I am not programming I love to play
+            guitar and paint. I strive to surround myself with art and music,
+            and to absorb as much as I can from the people and the world around
+            me. I think of programming as a blank canvas, and the more I learn
+            from other people and other disciplines, the more ideas I am able to
+            implement.
+          </p>
         </div>
       </div>
     </div>
@@ -280,5 +303,4 @@
     </div>
   </body>
   <script src="./assets/javascript/flowercanvas.js"></script>
-  <script src="./assets/javascript/site.js"></script>
 </html>
