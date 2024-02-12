@@ -1,0 +1,47 @@
+body {
+  background: black;
+  color: white;
+}
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+.castlist {
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.characterName {
+  border-bottom: 1px dotted white;
+  text-transform: uppercase;
+}
+.actorName {
+  text-transform: capitalize;
+}
+#videoBackground {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: 100vh;
+  z-index: -2;
+}
+#videoOverlay {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, .5) 0%,
+    rgba(0, 0, 0, 1) 44%,
+    rgba(0, 0, 0, 1) 45%
+  );
+  z-index: -1;
+}
